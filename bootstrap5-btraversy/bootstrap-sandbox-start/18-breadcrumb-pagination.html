@@ -1,42 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Breadcrumb & Pagination</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Breadcrumb & Pagination</h1>
 
-      <!-- Breadcrumb -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Breadcrumb & Pagination</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Breadcrumb & Pagination</h1>
 
-      <!-- Dividers -->
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
+      </ol>
+    </nav>
+    <br /><br />
 
-      <br /><br />
+    <!-- Dividers -->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb   ">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Library</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Data</li>
 
-      <!-- Pagination -->
+      </ol>
+    </nav>
 
-      <br /><br />
+    <br /><br />
 
-      <!-- Active & Disabled States -->
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
 
-      <br /><br />
+    <br /><br />
 
-      <!-- Sizing -->
+    <!-- Active & Disabled States -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link disabled" href="#" aria-disabled="true">Previous</a></li>
+        <li class="page-item"><a class="page-link active" href="#" active>1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
 
-      <br /><br />
+    <br /><br />
 
-      <!-- Alignment -->
+    <!-- Sizing -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-lg">
+        <li class="page-item"><a class="page-link disabled" href="#" aria-disabled="true">Previous</a></li>
+        <li class="page-item"><a class="page-link active" href="#" active>1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm">
+        <li class="page-item"><a class="page-link disabled" href="#" aria-disabled="true">Previous</a></li>
+        <li class="page-item"><a class="page-link active" href="#" active>1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
+    <br /><br />
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-lg justify-content-center">
+        <li class="page-item"><a class="page-link disabled" href="#" aria-disabled="true">Previous</a></li>
+        <li class="page-item"><a class="page-link active" href="#" active>1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm justify-content-end">
+        <li class="page-item"><a class="page-link disabled" href="#" aria-disabled="true">Previous</a></li>
+        <li class="page-item"><a class="page-link active" href="#" active>1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+      </ul>
+    </nav>
+    <!-- Alignment -->
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
