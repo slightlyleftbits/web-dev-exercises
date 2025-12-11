@@ -1,46 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Forms & Input</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Forms & Input</h1>
 
-      <!-- Basic Form -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Forms & Input</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Forms & Input</h1>
 
-      <!-- Other Fields -->
-      <form>
-        <!-- Select Fields -->
+    <!-- Basic Form -->
+    <form action="">
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="check" />
+        <label class="form-check-label" for="check">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br /><br />
 
-        <!-- Textarea -->
+    <!-- Other Fields -->
+    <form>
+      <!-- Select Fields -->
+      <div class="mb-3"><select name="" id="" class="form-select">
+          <option value="">Select an option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select></div>
+      <!-- Textarea -->
+      <div class="mb-3"><textarea name="" id="" cols="30" rows="10" class="form-control"></textarea></div>
+      <!-- Switch -->
+      <div class="form-check form-switch">
+        <input type="checkbox" class="form-check-input" id="switch" />
+      </div>
+      <!-- Inline Checkboxes -->
+      <div class="mb-3">
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="ch1" />
+          <label class="form-check-label" for="ch1">Toggle this switch element</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="ch2" />
+          <label class="form-check-label" for="ch2">Toggle this switch element</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="checkbox" class="form-check-input" id="ch3" />
+          <label class="form-check-label" for="ch3">Toggle this switch element</label>
+        </div>
+      </div>
+      <!-- Toggle Button -->
+      <div class="mb-3">
+        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" />
+        <label class="btn btn-danger" for="btn-check">Toggle Button</label>
+      </div>
+      <!-- Range -->
+      <div class="mb-3">
+        <label for="range" class="form-label">Range</label>
+        <input type="range" class="form-range" id="range" />
+      </div>
+      <!-- Range Steps -->
+      <div class="mb-3">
+        <label for="range2" class="form-label">Range</label>
+        <input type="range" class="form-range" id="range2" min="0" max="10" step="1" />
+      </div>
+    </form>
 
-        <!-- Switch -->
+    <br /><br />
 
-        <!-- Inline Checkboxes -->
+    <!-- Input Groups -->
+    <form>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username" />
+      </div>
+      <div class="mb-3 input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username" />
+        <span class="input-group-text">@example.com</span>
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" />
+        <span class="input-group-text">.00</span>
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <div class="mb-3 input-group">
+        <span class="input-group-text">Username</span>
+        <input type="text" class="form-control" />
+        <button class="btn btn-primary" type="button">Button</button>
+      </div>
+    </form>
 
-        <!-- Toggle Button -->
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
 
-        <!-- Range -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
 
-        <!-- Range Steps -->
-      </form>
-
-      <br /><br />
-
-      <!-- Input Groups -->
-      <form></form>
-
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
-
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
