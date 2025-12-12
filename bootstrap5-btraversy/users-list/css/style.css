@@ -1,0 +1,14 @@
+@media
+(max-width: 767px) {
+  .user-menu {
+    justify-content: center !important;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .user-card img {
+    margin-bottom: 15px;
+  }
+}       
