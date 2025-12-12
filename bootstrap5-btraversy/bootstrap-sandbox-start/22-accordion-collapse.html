@@ -1,26 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Accordion & Collapse</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Accordion & Collapse</h1>
 
-      <!-- Accordion -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Accordion & Collapse</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Accordion & Collapse</h1>
 
-      <!-- Collapse -->
+    <!-- Accordion -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+            <br /><br />
 
-      <!-- Don't go past here -->
+            <!-- Collapse -->
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+          <!-- Don't go past here -->
+        </div>
+
+      </div>
     </div>
-    <div style="margin-top: 350px"></div>
+    <br /><br />
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <div class="my-e">
+      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#mycontent">Button
+
+      </button>
+    </div>
+    <div id="mycontent" class="collapse show">
+      <div class="card">
+        <div class="card-body">
+          Collapsible Content
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam sed, maxime ad eos esse minus.
+          Consectetur illum corrupti repellat odio perspiciatis ut minima eos unde ab voluptates, sed voluptatum,
+          doloribus odit veritatis, laborum a in eveniet esse earum aspernatur quia facere totam officiis. Perspiciatis,
+          blanditiis obcaecati optio ipsum voluptatum ullam. Eum, quasi sint maxime doloremque illum ipsam rem atque
+          iusto sit aliquid officiis cumque cum necessitatibus voluptatibus provident impedit vero nesciunt, eaque unde
+          veritatis sequi. Cupiditate quisquam, enim repudiandae magnam facere veritatis laborum asperiores neque culpa
+          est atque incidunt illum quidem? Voluptate officiis veniam labore eveniet dolor, numquam temporibus.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

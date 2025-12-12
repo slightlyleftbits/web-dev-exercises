@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <title>Bootstrap Sandbox | Popovers & Tooltips</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="mb-5">Popovers & Tooltips</h1>
 
-      <!-- Popover -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <title>Bootstrap Sandbox | Popovers & Tooltips</title>
+</head>
 
-      <br /><br />
+<body>
+  <div class="container">
+    <h1 class="mb-5">Popovers & Tooltips</h1>
 
-      <!-- Tooltip -->
+    <!-- Popover -->
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover Title" id="popover"
+      data-bs-content="This is the popover content. It can be of any length.">Click to toggle popover</button>
 
-      <!-- Don't go past here -->
-    </div>
-    <div style="margin-top: 350px"></div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <br /><br />
+
+    <!-- Tooltip -->
+    <p>Lorem ipsum dolor sit, <a href="" data-bs-toggle="tooltip" data-bs-title="Tooltip Title">tool tip 1</a> amet
+      consectetur
+      adipisicing elit. Ipsa soluta dolorum unde temporibus odio? Nobis cumque
+      rem incidunt quas consectetur doloremque similique vero, est vitae ipsum quaerat consequatur facilis. Illum, atque
+      distinctio? Repellendus sit dolores dolore adipisci <a href="" data-bs-toggle="tooltip"
+        data-bs-title="Tooltip Title">tool tip 2</a> architecto pariatur alias asperiores ex quaerat atque
+      molestias, nobis veniam dolorem velit nostrum omnis sapiente esse quo necessitatibus. Accusantium molestias ullam
+      ipsam beatae, maiores maxime debitis enim sint facilis possimus sit adipisci voluptatum sapiente, veritatis
+      quisquam qui expedita tenetur laborum eveniet. Blanditiis modi nostrum suscipit eos non, voluptates, quos quam
+      laboriosam velit voluptate quae nobis necessitatibus distinctio unde dignissimos! Impedit hic quis omnis.</p>
+    <!-- Don't go past here -->
+  </div>
+  <div style="margin-top: 350px"></div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    const popoverel = document.getElementById('popover');
+
+    const popover = new bootstrap.Popover(popoverel);
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+    // var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    //   return new bootstrap.Popover(popoverTriggerEl)
+    // })
+
+    // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    //   return new bootstrap.Tooltip(tooltipTriggerEl)
+    // })
+  </script>
+</body>
+
 </html>
