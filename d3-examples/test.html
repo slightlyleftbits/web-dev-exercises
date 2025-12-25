@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="container"></div>
+    <script type="module">
+
+        import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+
+        const rides = [{ distance: 5, duration: 15 }, { distance: 10, duration: 30 }, { distance: 15, duration: 45 }, { distance: 20, duration: 60 }];
+
+        const svg = d3.select("#container")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 300);
+
+        svg.selectAll("circle")
+            .data(rides)
+            .enter()
+            .append("circle")
+            .attr("cx", d => d.distance * 10)
+            .attr("cy", d => 300 - d.duration * 4)
+            .attr("r", 5)
+            .attr("fill", "red");
+    </script>
+
+</body>
+
+</html>
